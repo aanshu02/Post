@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_marginLeft="20dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/buttonstyle2"
+                android:src="@drawable/photo"/>
+
+
+        <EditText
+                android:gravity="top"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/buttonstyle2"
+                android:drawablePadding="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+
+                android:hint="Share an article,photo,video or idea"
+                android:textSize="16sp"/>
+
+
+
+    </RelativeLayout>
+
+    <TableRow
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp" >
+
+        <ImageButton
+                android:paddingLeft="5dp"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginRight="15dp"
+                android:id="@+id/button1"
+                android:src="@drawable/ic_attach_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageButton
+                android:paddingLeft="5dp"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginRight="15dp"
+                android:id="@+id/button2"
+                android:src="@drawable/ic_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageButton
+                android:paddingLeft="5dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_video_library"
+                android:layout_marginRight="80dp"
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post" />
+
+    </TableRow>
+
+</FrameLayout>
